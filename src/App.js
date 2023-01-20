@@ -1,10 +1,15 @@
 import './App.css';
+import Main from './Layouts/Main';
+import { Outlet } from 'react-router-dom';
+
 
 function App() {
   return (
     <div className="App">
-     <h1 className='text-red-700' > tailwindcss with react</h1>
-    </div>
+      <Main>
+         <Outlet />
+      </Main>
+   </div>
   );
 }
 

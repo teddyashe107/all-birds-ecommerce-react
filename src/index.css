@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+    height: 4px;
+
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+    background: whitesmoke;
+
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    background: transparent;
+
+    
+
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

@@ -5,8 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './error-page';
-import Products from './pages/Products';
-import Home from './pages/Home';
+import Home from 'pages/home';
+import Products from 'pages/products';
 
 
 

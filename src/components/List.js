@@ -1,6 +1,5 @@
 const List = ({content}) => {
 
-    console.log(content.items)
     return (
         <div>
          <h2 className='uppercase tracking-wider font-bold'>{content.title}</h2>

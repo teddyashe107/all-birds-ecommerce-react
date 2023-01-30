@@ -1,0 +1,45 @@
+[
+    {
+	"title": "help",
+	"items": [
+		 "1-888-963-8944",
+		"1-814-251-9966 (Text)",
+		"help@allbirds.com",
+		"Returns/Exchanges",
+		"FAQ/Contact Us",
+		"Afterpay"
+	]
+},
+
+{
+	"title": "Shop",
+	"items": [
+		"Men's Shoes",
+		"Women's Shoes",
+		"Men's Apparel",
+		"Women's Apparel",
+		"Socks",
+		"Gift Cards",
+		"Refer a Friend",
+		"Download the Allbirds App"
+	]
+},
+
+{
+	"title": "company",
+	"items": [
+		"Our Stores",
+		"Our Story",
+		"Our Materials",
+		"Sustainability",
+		"FAQ/Contact Us",
+		"Our Stores",
+		"Our Story",
+		"Our Materials",
+		"Sustainability",
+		"FAQ/Contact Us"
+	]
+}
+
+
+]

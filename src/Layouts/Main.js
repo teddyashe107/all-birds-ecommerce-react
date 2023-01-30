@@ -1,7 +1,7 @@
+import Footer from "components/Footer/Footer";
+import Header from "components/Header/Header";
 import { useState } from "react";
 import FloatButton from "../components/Buttons/FloatButton";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import TopBar from "../components/TopBar";
 
 

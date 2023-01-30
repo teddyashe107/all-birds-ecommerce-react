@@ -3,7 +3,6 @@ import ProductCard from 'components/common/Card';
 import BaseCard from 'components/Buttons/BaseCard';
 import Carousel from 'components/Carousel';
 import Newsletter from 'components/Newsletter';
-import TestProp from 'components/TestProp';
 import data from './data.json'
 import panoramas from './panoramas.json'
 

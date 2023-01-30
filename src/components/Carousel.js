@@ -1,58 +1,14 @@
 import { useCallback } from 'react';
 import { useRef, useState } from 'react';
 import BaseBtn from './Buttons/BaseBtn';
+import useSliderHook from 'common/hooks/useSliderHook';
 
 const categories = ['For everyday', 'for the rain', 'for running'];
 
 const Carousel = ({ products }) => {
-	const [active, setActive] = useState(0);
-
-	const previousIndex = useRef(0);
 	const scroller = useRef();
-
-	const prev = useCallback((index) => {
-		console.log('prev is called')
-		const scrollLeft = scroller.current.scrollLeft;
-		const itemWidth = parseInt(
-			getComputedStyle(scroller.current.children[0]).width
-		);
-
-		scroller.current.scrollLeft = scrollLeft - itemWidth * index;
+	const {prev, next, handleSlider, active} = useSliderHook(scroller);
 	
-	}, []);
-
-	const next = (index) => {
-		console.log('next is called')
-		requestAnimationFrame(() => {
-			const scrollLeft = scroller.current.scrollLeft;
-			const itemWidth = parseInt(
-				getComputedStyle(scroller.current.children[0]).width
-			);
-		console.log(scrollLeft)
-		console.log(itemWidth, 'item width')
-			scroller.current.scrollLeft = scrollLeft + itemWidth * index;
-			
-		});
-	};
-
-	const slide = (index) => {
-		if (index === previousIndex.current) return;
-		if (index > previousIndex.current) {
-			next(index);
-			previousIndex.current = index;
-		} else {
-			if (index === 0) {
-				prev(2);
-			}
-			prev(index);
-			previousIndex.current = index;
-		}
-	};
-
-	const handleSlider = (index) => {
-		setActive(index);
-		slide(index);
-	};
 
 	return (
 		<div>

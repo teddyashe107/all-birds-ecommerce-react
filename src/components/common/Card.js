@@ -1,3 +1,4 @@
+import useSliderHook from "common/hooks/useSliderHook";
 import { useRef, useEffect, useState } from "react";
 
 const ProductCard = ({products}) => {  
@@ -6,6 +7,7 @@ const ProductCard = ({products}) => {
   const scroller = useRef()
   const prevIcon = useRef()
   const nextIcon = useRef()
+
 
   const next = () => {
     console.log('next is called')
@@ -17,7 +19,6 @@ const ProductCard = ({products}) => {
     console.log(scroller.current.scrollLeft, 'scs >>>>>')
     setViewPort(scroller.current.scrollLeft + elementWidth);
 
-   
   }
 
   const prev = () => {

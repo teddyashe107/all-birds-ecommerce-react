@@ -1,8 +1,10 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ErrorPage from '../error-page';
-import Home from 'pages/home';
-import Products from 'pages/products';
 import App from '../App'
+import { lazy } from 'react';
+
+const Home = lazy(() => import('pages/home'))
+const Products = lazy(() => import('pages/products'))
+const ErrorPage = lazy(() => import('../error-page'))
 
 const router = createBrowserRouter([
 	{
@@ -18,6 +20,10 @@ const router = createBrowserRouter([
 				path: '/products',
 				element: <Products />,
 			},
+            {
+                path: '/rerun',
+                errorElement: <ErrorPage />
+            }
 		],
 	},
 ]);
